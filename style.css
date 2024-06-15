@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: auto;
+}
+
+.frame {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: 5px solid red;
+    box-sizing: content-box;
+    margin: auto;
+}
