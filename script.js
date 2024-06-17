@@ -4,7 +4,7 @@ const sizeChangeButton = document.querySelector(".size-changer");
 
 //find the size of the cell based on the width of the frame
 frameWidth = 500;
-cellAmount = 64;
+cellAmount = 16;
 cellSize = frameWidth / cellAmount;
 
 fillGrid();
@@ -59,10 +59,14 @@ function fillCell(cell) {
 }
 
 function changeGridSize() {
-    let newSize = prompt();
-    clearGrid();
-    cellAmount = newSize;
-    cellSize = frameWidth / cellAmount;
-    fillGrid();
-    cellFunctionality();
+    let newSize = prompt("Enter a number (Max: 100)");
+    if (newSize >= 0 && newSize <= 100) {
+        clearGrid();
+        cellAmount = newSize;
+        cellSize = frameWidth / cellAmount;
+        fillGrid();
+        cellFunctionality();
+    } else {
+        changeGridSize();
+    }
 }

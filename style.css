@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: auto;
 }
@@ -12,4 +13,13 @@ body {
     border: 5px solid red;
     box-sizing: content-box;
     margin: auto;
+}
+
+.size-changer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    justify-content: center;
+    width: 300px;
 }
