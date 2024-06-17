@@ -35,7 +35,7 @@ function fillGrid() {
         newCell.setAttribute("id", "cell");
         newCell.style.display = "flex";
         newCell.style.boxSizing = "border-box";
-        newCell.style.border = "1px solid blue";
+        //newCell.style.border = "1px solid blue";
         newCell.style.flexGrow = "0";
         newCell.style.flexShrink = "0";
         newCell.style.height = (cellSize + "px");
